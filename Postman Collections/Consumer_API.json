@@ -80,11 +80,10 @@
             "exec": [
               "tests[\"Status code is 200\"] = responseCode.code === 200;",
               "",
-              "var jsonData = JSON.parse(responseBody);",
-              "var consumer-api = JSON.parse(jsonData.consumer-api);",
-              "//var redshit = jsonData.redshift;",
-              "//tests[\"version\"] = jsonData.consumer-api.service.port === 8080;",
-              "//tests[\"build-number\"] = jsonData.redshift.user === 'admin';"
+              "var data = JSON.parse(responseBody);",
+              "//tests[\"version\"] = data.consumer-api.service.port === \"8080\";",
+              "tests[\"build-number\"] = data.redshift === \"dev\";",
+              "console.log(data.redshift);"
             ]
           }
         }
