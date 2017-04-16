@@ -78,7 +78,11 @@
           "script": {
             "type": "text/javascript",
             "exec": [
-              "tests[\"Status code is 200\"] = responseCode.code === 200;"
+              "tests[\"Status code is 200\"] = responseCode.code === 200;",
+              "",
+              "var jsonData = JSON.parse(responseBody);",
+              "tests[\"version\"] = jsonData.consumer-api.service.port === 8080;",
+              "tests[\"build-number\"] = jsonData.build_number > 500;"
             ]
           }
         }
