@@ -61,6 +61,17 @@
     {
       "_postman_id": "fd40a6ae-c38a-7f29-ab46-981b8a97c80e",
       "name": "Pixall",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "tests[\"Status code is 200\"] = responseCode.code === 200;"
+            ]
+          }
+        }
+      ],
       "request": {
         "url": "http://slate-timid-rhino.lambda1024.com:8080/pixall/",
         "method": "GET",
