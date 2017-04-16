@@ -1,0 +1,59 @@
+{
+  "variables": [],
+  "info": {
+    "name": "Consumer API",
+    "_postman_id": "a28efd55-c0cc-58a5-994f-9d5cfc480d47",
+    "description": "",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "_postman_id": "8ea0185f-d924-7f3b-bae9-142b582a16b4",
+      "name": "Service Status",
+      "request": {
+        "url": "http://slate-timid-rhino.lambda1024.com:8080/service/status",
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "79e4626a-8dc9-53e1-de1f-8c6ae646ae00",
+      "name": "Health Check",
+      "request": {
+        "url": "http://slate-timid-rhino.lambda1024.com:8080/service/healthcheck",
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "1e69a6f5-1879-2df1-a815-9268be44c42d",
+      "name": "Service Config",
+      "request": {
+        "url": "http://slate-timid-rhino.lambda1024.com:8080/service/config",
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "fd40a6ae-c38a-7f29-ab46-981b8a97c80e",
+      "name": "Pixall",
+      "request": {
+        "url": "http://slate-timid-rhino.lambda1024.com:8080/pixall?dealerCode=audisouthaustinaustinaoa",
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "description": ""
+      },
+      "response": []
+    }
+  ]
+}
