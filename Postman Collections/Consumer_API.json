@@ -37,6 +37,17 @@
     {
       "_postman_id": "79e4626a-8dc9-53e1-de1f-8c6ae646ae00",
       "name": "Health Check",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "tests[\"Status code is 200\"] = responseCode.code === 200;"
+            ]
+          }
+        }
+      ],
       "request": {
         "url": "http://slate-timid-rhino.lambda1024.com:8080/service/healthcheck",
         "method": "GET",
