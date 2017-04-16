@@ -55,7 +55,7 @@
               "};",
               "",
               "tests[\"tests-run\"] = tv4.validate(responseBody, schema);",
-              "console.log(\"Validation failed: \", tv4.error);"
+              "console.log(tv4);"
             ]
           }
         }
