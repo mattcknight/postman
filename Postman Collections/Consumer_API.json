@@ -46,10 +46,10 @@
             "exec": [
               "tests[\"Status code is 200\"] = responseCode.code === 200;",
               "",
-              "var jsonData = JSON.parse(responseBody);",
+              "var data = JSON.parse(responseBody);",
               "var Tests = [];",
               "",
-              "response.forEach(function (obj) {",
+              "data.forEach(function (obj) {",
               "    obj.tests.forEach(function (test) {",
               "        Tests.push(tests.test_name);",
               "    });",
