@@ -81,9 +81,11 @@
               "tests[\"Status code is 200\"] = responseCode.code === 200;",
               "",
               "var data = JSON.parse(responseBody);",
-              "//tests[\"version\"] = data.consumer-api.service.port === \"8080\";",
-              "tests[\"build-number\"] = data.redshift === \"dev\";",
-              "console.log(data.redshift);"
+              "tests[\"API Port\"] = data[\"consumer-api\"].service.port === 8080;",
+              "tests[\"API Database Environment\"] = data[\"redshift\"][\"database\"] === \"dev\";",
+              "",
+              "console.log(data[\"redshift\"]);",
+              ""
             ]
           }
         }
