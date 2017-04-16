@@ -10,6 +10,18 @@
     {
       "_postman_id": "8ea0185f-d924-7f3b-bae9-142b582a16b4",
       "name": "Service Status",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "var jsonData = JSON.parse(responseBody);",
+              "tests[\"version\"] = jsonData.version > 1336;"
+            ]
+          }
+        }
+      ],
       "request": {
         "url": "http://slate-timid-rhino.lambda1024.com:8080/service/status",
         "method": "GET",
