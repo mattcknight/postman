@@ -49,6 +49,17 @@
     {
       "_postman_id": "1e69a6f5-1879-2df1-a815-9268be44c42d",
       "name": "Service Config",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "tests[\"Status code is 200\"] = responseCode.code === 200;"
+            ]
+          }
+        }
+      ],
       "request": {
         "url": "http://slate-timid-rhino.lambda1024.com:8080/service/config",
         "method": "GET",
