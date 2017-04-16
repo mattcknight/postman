@@ -47,15 +47,15 @@
               "tests[\"Status code is 200\"] = responseCode.code === 200;",
               "",
               "var jsonData = JSON.parse(responseBody);",
+              "var Tests = [];",
               "",
-              "var schema = {",
-              " \"tests\": [{}]",
-              "};",
+              "response.forEach(function (obj) {",
+              "    obj.tests.forEach(function (test) {",
+              "        Tests.push(tests.test_name);",
+              "    });",
+              "});",
               "",
-              "tests[\"tests-run\"] = tv4.validate(responseBody, schema);",
-              "if (!tv4.valid) {",
-              "    console.log(tv4.error);",
-              "}"
+              "console.log(Tests);"
             ]
           }
         }
