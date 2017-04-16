@@ -49,13 +49,10 @@
               "var response = JSON.parse(responseBody);",
               "var Tests = [];",
               "",
-              "response.forEach(function (obj) {",
-              "    obj.tests.forEach(function (test) {",
-              "        Tests.push(tests.test_name);",
-              "    });",
-              "});",
-              "",
-              "console.log(Tests);"
+              "for (var i in response.tests){",
+              "    var obj = response.tests[i];",
+              "    tests[obj.test_name] = obj.test_result === \"passed\";",
+              "}"
             ]
           }
         }
