@@ -20,8 +20,6 @@
               "",
               "var jsonData = JSON.parse(responseBody);",
               "tests[\"version\"] = jsonData.version > 1336;",
-              "",
-              "var jsonData = JSON.parse(responseBody);",
               "tests[\"build-number\"] = jsonData.build_number > 500;",
               ""
             ]
