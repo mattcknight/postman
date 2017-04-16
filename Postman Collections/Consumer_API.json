@@ -55,8 +55,8 @@
               "};",
               "",
               "tests[\"tests-run\"] = tv4.validate(responseBody, schema);",
-              "if (tv4.error !== \"NULL\") {",
-              "    console.log(tv4.valid);",
+              "if (!tv4.valid) {",
+              "    console.log(tv4.error);",
               "}"
             ]
           }
