@@ -110,15 +110,9 @@
         }
       ],
       "request": {
-        "url": "http://slate-timid-rhino.lambda1024.com:8080/pixall/",
+        "url": "http://slate-timid-rhino.lambda1024.com:8080/pixall?ipv4=127.0.0.1",
         "method": "GET",
-        "header": [
-          {
-            "key": "ipv4",
-            "value": "127.0.0.1",
-            "description": ""
-          }
-        ],
+        "header": [],
         "body": {},
         "description": ""
       },
