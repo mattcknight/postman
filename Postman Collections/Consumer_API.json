@@ -19,8 +19,8 @@
               "tests[\"Status code is 200\"] = responseCode.code === 200;",
               "",
               "var jsonData = JSON.parse(responseBody);",
-              "tests[\"version\"] = jsonData.version > 1336;",
-              "tests[\"build-number\"] = jsonData.build_number > 500;",
+              "tests[\"Version\"] = jsonData.version > 1336;",
+              "tests[\"Build Number\"] = jsonData.build_number > 500;",
               ""
             ]
           }
