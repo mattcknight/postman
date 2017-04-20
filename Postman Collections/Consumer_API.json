@@ -112,7 +112,7 @@
               "tests[\"Status code is 200\"] = responseCode.code === 200;",
               "",
               "var data = JSON.parse(responseBody);",
-              "tests[\"API Port\"] = data[0][\"ipv4\"] === \"1.1.1.1\";"
+              "tests[\"ipv4 is 1.1.1.1\"] = data[0][\"ipv4\"] === \"1.1.1.1\";"
             ]
           }
         }
