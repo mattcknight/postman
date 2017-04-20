@@ -104,7 +104,10 @@
           "script": {
             "type": "text/javascript",
             "exec": [
-              "tests[\"Status code is 200\"] = responseCode.code === 200;"
+              "tests[\"Status code is 200\"] = responseCode.code === 200;",
+              "",
+              "var data = JSON.parse(responseBody);",
+              "tests[\"API Port\"] = data[0][\"ipv4\"] === \"1.1.1.1\";"
             ]
           }
         }
