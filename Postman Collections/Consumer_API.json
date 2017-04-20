@@ -53,9 +53,9 @@
               "    var obj = response.tests[i];",
               "    ",
               "    if(obj.test_name === \"dummyTest\") {",
-              "        tests[obj.test_name] = obj.test_result === \"passed\";",
+              "        tests[obj.test_name + \" Passed\"] = obj.test_result === \"passed\";",
               "    }else{",
-              "        tests[obj.test_name] = obj.test_result === \"failed\";",
+              "        tests[obj.test_name + \" Failed\"] = obj.test_result === \"failed\";",
               "    }",
               "}"
             ]
