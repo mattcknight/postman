@@ -51,7 +51,12 @@
               "",
               "for (var i in response.tests){",
               "    var obj = response.tests[i];",
-              "    tests[obj.test_name] = obj.test_result === \"passed\";",
+              "    ",
+              "    if(obj.test_name === \"dummyTest\") {",
+              "        tests[obj.test_name] = obj.test_result === \"passed\";",
+              "    }else{",
+              "        tests[obj.test_name] = obj.test_result === \"failed\";",
+              "    }",
               "}"
             ]
           }
