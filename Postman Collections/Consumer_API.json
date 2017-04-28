@@ -118,7 +118,7 @@
         }
       ],
       "request": {
-        "url": "http://slate-timid-rhino.lambda1024.com:8080/pixall?dealerCode=moheganlakeaudiaoa",
+        "url": "http://demo-fun-time.lambda1024.com:8080/pixall?dealerCode=moheganlakeaudiaoa",
         "method": "GET",
         "header": [],
         "body": {},
