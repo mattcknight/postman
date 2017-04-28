@@ -63,7 +63,7 @@
         }
       ],
       "request": {
-        "url": "http://slate-timid-rhino.lambda1024.com:8080/service/healthcheck",
+        "url": "http://demo-fun-time.lambda1024.com:8080/service/healthcheck",
         "method": "GET",
         "header": [],
         "body": {},
