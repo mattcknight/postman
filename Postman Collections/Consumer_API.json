@@ -92,7 +92,7 @@
         }
       ],
       "request": {
-        "url": "http://slate-timid-rhino.lambda1024.com:8080/service/config",
+        "url": "http://demo-fun-time.lambda1024.com:8080/service/config",
         "method": "GET",
         "header": [],
         "body": {},
