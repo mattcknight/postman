@@ -111,14 +111,13 @@
             "exec": [
               "tests[\"Status code is 200\"] = responseCode.code === 200;",
               "",
-              "var data = JSON.parse(responseBody);",
-              "tests[\"ipv4 is 1.1.1.1\"] = data[0][\"ipv4\"] === \"1.1.1.1\";"
+              "var data = JSON.parse(responseBody);"
             ]
           }
         }
       ],
       "request": {
-        "url": "http://demo-fun-time.lambda1024.com:8080/pixall?dealerCode=moheganlakeaudiaoa",
+        "url": "http://demo-fun-time.lambda1024.com:8080/pixall?ipv4=127.0.0.1&dealerCode=moheganlakeaudiaoa",
         "method": "GET",
         "header": [],
         "body": {},
