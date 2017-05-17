@@ -117,7 +117,7 @@
         }
       ],
       "request": {
-        "url": "http://demo-fun-time.lambda1024.com:8080/pixall?ipv4=127.0.0.1&dealerCode=moheganlakeaudiaoa",
+        "url": "http://slate-timid-rhino.lambda1024.com:8080/pixall/search?dealerCode=moheganlakeaudiaoa&ip=24.189.90.118&vin=5ae562f80a0e0a175837ce58a3286b0d&eventtimestamp=1486780625429",
         "method": "GET",
         "header": [],
         "body": {},
