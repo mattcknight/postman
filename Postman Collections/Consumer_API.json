@@ -135,7 +135,55 @@
         }
       ],
       "request": {
-        "url": "http://slate-timid-rhino.lambda1024.com:8080/pixall/search?dealerCode=moheganlakeaudiaoa&ip=24.189.90.118&vin=5ae562f80a0e0a175837ce58a3286b0d&eventtimestamp=1486780625429",
+        "url": {
+          "raw": "http://consumer-api.nonprod.datasolutions.coxautoinc.com/pixall/search?apikey=c44755c0d6ec4bfe814413cbbf9ab16b&dealerCode=moheganlakeaudiaoa&ip=24.189.90.118&vin=5ae562f80a0e0a175837ce58a3286b0d&eventtimestamp=1486780625429",
+          "protocol": "http",
+          "auth": {},
+          "host": [
+            "consumer-api",
+            "nonprod",
+            "datasolutions",
+            "coxautoinc",
+            "com"
+          ],
+          "path": [
+            "pixall",
+            "search"
+          ],
+          "query": [
+            {
+              "key": "apikey",
+              "value": "c44755c0d6ec4bfe814413cbbf9ab16b",
+              "equals": true,
+              "description": ""
+            },
+            {
+              "key": "dealerCode",
+              "value": "moheganlakeaudiaoa",
+              "equals": true,
+              "description": ""
+            },
+            {
+              "key": "ip",
+              "value": "24.189.90.118",
+              "equals": true,
+              "description": ""
+            },
+            {
+              "key": "vin",
+              "value": "5ae562f80a0e0a175837ce58a3286b0d",
+              "equals": true,
+              "description": ""
+            },
+            {
+              "key": "eventtimestamp",
+              "value": "1486780625429",
+              "equals": true,
+              "description": ""
+            }
+          ],
+          "variable": []
+        },
         "method": "GET",
         "header": [],
         "body": {},
