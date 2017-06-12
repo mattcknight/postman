@@ -104,7 +104,7 @@
         }
       ],
       "request": {
-        "url": "http://demo-fun-time.lambda1024.com:8080/service/config",
+        "url": "http://consumer-api.nonprod.datasolutions.coxautoinc.com/service/config",
         "method": "GET",
         "header": [],
         "body": {},
