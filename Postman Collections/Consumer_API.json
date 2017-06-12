@@ -69,9 +69,15 @@
         }
       ],
       "request": {
-        "url": "http://demo-fun-time.lambda1024.com:8080/service/healthcheck",
+        "url": "http://consumer-api.nonprod.datasolutions.coxautoinc.com/service/healthcheck",
         "method": "GET",
-        "header": [],
+        "header": [
+          {
+            "key": "apikey",
+            "value": "c44755c0d6ec4bfe814413cbbf9ab16b",
+            "description": ""
+          }
+        ],
         "body": {},
         "description": ""
       },
